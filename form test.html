@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>uji coba form</title>
+	<SCRIPT LANGUAGE="JavaScript">
+		function mailMe(form){
+    		Subject=document.form1.inputbox1.value
+    		/*CC= document.testform.inputbox2.value
+    		BCC= document.testform.inputbox3.value
+    		location = "/javaworld/cgi-bin/jw-mailto.cgi?jwedit@javaworld.com?subject="+Subject+"&Bcc="+
+        	BCC+"&cc="+CC
+    		document.testform.submit();*/
+    	}
+    	function coba(){
+    		document.getElementById('texttujuan').innerHTML = document.getElementById('textawal').innerHTML;
+    	}
+</SCRIPT>
+</head>
+<body>
+	<form name="form1">
+		<!-- <input type="button" name="button1" value="click">
+		<input type="textview">
+		<input type="checkbox">
+		<textarea></textarea>
+
+		<SELECT NAME="list" SIZE="3">
+			<OPTION>This is item 1
+			<OPTION>This is item 2
+			<OPTION>This is item 3
+		</SELECT> -->
+		<INPUT TYPE="text" NAME="inputbox1" VALUE="This is such a great form!" SIZE=50 id = textawal>
+		<!-- <P>Send cc to: <BR>
+		<INPUT TYPE="text" NAME="inputbox2" VALUE="" SIZE=50><P>
+		Send blind cc to: <BR>
+		<INPUT TYPE="text" NAME="inputbox3" VALUE="" SIZE=50><P>-->
+		<INPUT TYPE="submit" onclick="coba()"><BR> 
+	</form>
+
+	<p id = texttujuan></p>
+
+</body>
+</html>
